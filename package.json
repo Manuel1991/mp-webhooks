@@ -1,0 +1,22 @@
+{
+  "name": "mp-webhooks",
+  "version": "1.0.0",
+  "description": "test mercado-pago webhooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manuel1991/mp-webhooks.git"
+  },
+  "author": "fochoa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Manuel1991/mp-webhooks/issues"
+  },
+  "homepage": "https://github.com/Manuel1991/mp-webhooks#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
