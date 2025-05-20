@@ -10,7 +10,22 @@ app.get("/status", (req, res) => {
     res.status(200).send("API funcionando correctamente");
 });
 
-app.post("/api/order-webhooks/mercadopago", (req, res) => {
+app.post("/webhooks/mercadopago/:applicationId", (req, res) => {
+    console.log("\n===============\n");
+    
+    console.log("=== HEADERS ===");
+    console.log(req.headers);
+
+    console.log("=== APPLICATION_ID ===");
+    console.log(req.params.applicationId);
+    
+    console.log("=== BODY ===");
+    console.log(req.body);
+    
+    res.status(200).send("Webhook recibido");
+});
+
+app.post("/webhooks/mercadopago", (req, res) => {
     console.log("=== HEADERS ===");
     console.log(req.headers);
 
