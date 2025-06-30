@@ -20,18 +20,8 @@ app.post("/webhooks/mercadopago", (req, res) => {
     console.log(req.query.applicationNumber);
     
     console.log("=== BODY ===");
-    console.log(req.body);
+    console.log(JSON.stringify(req.body));
     
-    res.status(200).send("Webhook recibido");
-});
-
-app.post("/webhooks/mercadopago", (req, res) => {
-    console.log("=== HEADERS ===");
-    console.log(req.headers);
-
-    console.log("=== BODY ===");
-    console.log(req.body);
-
     res.status(200).send("Webhook recibido");
 });
 
